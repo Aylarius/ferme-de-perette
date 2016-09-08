@@ -1,0 +1,59 @@
+@import 'https://fonts.googleapis.com/css?family=Alegreya+Sans|Alegreya+Sans+SC|Courgette';
+body {
+	color: white;
+
+}
+
+#sponsor {
+	background-color: #5d4037;
+	padding-bottom: 10px;
+}
+#ferme {
+	background-color: #5d4037;
+}
+#vache-ferme {
+	width:100%;
+	border-color: #5d4037;
+	border-width: 10px;
+	border-style: solid;
+}
+#produit{
+	background-color: #2e7d32;	
+}
+footer {
+	background-color: #2e7d32;
+}
+.navbar {
+	background-color: #2e7d32;
+}
+.navbar-brand {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    text-align: center;
+    margin: auto;
+    font-family: 'Courgette', 'Alegreya Sans', cursive, sans-serif;
+}
+.navbar-default .navbar-brand {
+	color: white;
+	font-size: 32px;
+}
+.navbar-default .navbar-nav>li>a {
+	color: white;
+	font-size: 20px;
+	padding-right: 15px;
+	padding-left: 0px;
+    font-family:'Alegreya Sans', cursive, sans-serif;
+}
+.navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover {
+	color: inherit;
+}
+.navbar-toggle {
+    z-index:3;
+}
+.navbar-btn {
+   font-family:'Alegreya Sans', cursive, sans-serif;
+	font-size: 20px;
+	margin-right: 15px;
+}
