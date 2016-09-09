@@ -134,4 +134,19 @@ footer {
 	}
 	.navbar-collapse>.navbar-nav>.navbar-btn {
 		display: block !important;
-	}}
+	}
+}
+.carousel-inner>.item>img{
+	width: 100%;
+	height: auto;
+}
+.carousel-inner{
+	position: relative;
+}
+.carousel-inner:before{
+	content: "";
+	display: block;
+}
+
+
+
