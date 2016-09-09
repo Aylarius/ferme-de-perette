@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap 101 Template</title>
+    <title>Perette et ses vaches</title>
     <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans|Alegreya+Sans+SC|Courgette" rel="stylesheet">
     <link href="Bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="Font Awesome/css/font-awesome.min.css">
@@ -16,183 +16,165 @@
 </head>
 <body>
 <!-- Navigation -->
-<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle pull-left" data-toggle="collapse" data-target="#navbar-collapse-1">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <button type="button" class="btn btn-warning navbar-btn hidden-sm hidden-md hidden-lg pull-right">
-        <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
-        Panier</button> 
-
-    </div>
-    <a class="navbar-brand" href="#">Perette et ses vaches</a>
-    <div class="collapse navbar-collapse" id="navbar-collapse-1">
-      <ul class="nav navbar-nav navbar-left">
-        <li><a href="#ferme">Notre ferme</a></li>
-        <li><a href="#produit">Nos produits</a></li>
-        <li><a href="#sponsor">Sponsorisez une vache</a></li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right hidden-xs">
-            <button type="button" class="btn btn-warning navbar-btn">
-                  <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
-                  Panier</button> 
-      </ul>
-    </div>
-  </div>
-</nav>
-
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container-fluid" id="container-nav">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle pull-left" data-toggle="collapse" data-target="#navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <button type="button" class="btn btn-warning navbar-btn pull-right">
+                    <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
+                Panier</button> 
+            </div>
+            <a class="navbar-brand" href="#">Perette et ses vaches</a>
+            <div class="collapse navbar-collapse" id="navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-left">
+                    <li><a href="#ferme">Notre ferme</a></li>
+                    <li><a href="#produit">Nos produits</a></li>
+                    <li><a href="#sponsor">Nos vaches</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <button type="button" class="btn btn-warning navbar-btn">
+                        <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
+                    Panier</button> 
+                </ul>
+            </div>
+        </div>
+    </nav>
 <!-- End Navigation -->
-    <h1>Hello, world!</h1>
-
 <!-- Visual -->
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                      <img src="visual-vache.jpg" alt="Vache" class="responsive" style="width:100%;">
+    <div class="container-fluid" id="visual">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <img src="visual-vache3.jpg" alt="Vache" class="responsive" style="width:100%;">
+            </div>
+        </div>
+    </div>
+<!-- "Notre Ferme" -->
+    <div class="container-fluid" id="ferme">
+        <div class="row text-center">
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                <img src="ferme.jpg" alt="Ferme" class="responsive" id="vache-ferme">
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                <h2>Notre ferme</h2>    
+                <p>Madame Perette a repris la ferme de son arrière-grand-père récemment. Cinquante vaches gambadent à l’air pur sur les 30 hectares de terre qui entourent l’étable. Si son ancêtre a conservé longtemps les méthodes de traites traditionnelles, elle a choisi de les moderniser radicalement la salle de traite pour le bien-être des ses animaux. Et ses vaches elle les aime Mme Perette. Chacune a un nom, chacune a une histoire et elle leur réserve tous les jours une attention particulière.</p>   
+            </div>
+        </div>
+    </div>
+<!-- "Nos Produits" -->
+    <div class="container-fluid" id="produit">
+        <div class="row center-block text-center" style="width:80%">
+            <h2>Nos produits</h2>
+            <p>Lait, yaourts et fromages, retrouvez l’ensemble de la production de Perette et ses vaches.</p>
+<!-- Produit 1 : Fromage -->
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                <div class="thumbnail text-center">
+                    <img src="produit1.jpg" alt="fromage" class="responsive">
+                    <div class="caption">
+                        <h3>Nos fromages</h3>
+                        <button type="button" class="btn btn-warning" data-toggle="modal" data-target=".produit1">
+                            <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+                        Découvrez notre sélection</button>
                     </div>
                 </div>
             </div>
 
-<!-- "Notre Ferme" -->
-    <div class="container-fluid" id="ferme">
-      <div class="row text-center">
-        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-          <img src="ferme.jpg" alt="Ferme" class="responsive" id="vache-ferme">
-        </div>
-        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-            <h3>Notre ferme</h3>    
-            <p>Madame Perette a repris la ferme de son arrière-grand-père récemment. Cinquante vaches gambadent à l’air pur sur les 30 hectares de terre qui entourent l’étable. Si son ancêtre a conservé longtemps les méthodes de traites traditionnelles, elle a choisi de les moderniser radicalement la salle de traite pour le bien-être des ses animaux. Et ses vaches elle les aime Mme Perette. Chacune a un nom, chacune a une histoire et elle leur réserve tous les jours une attention particulière.
-            </p>        
-        </div>
-      </div>
-    </div>
-
-
-<!-- "Nos Produits" -->
-            <div class="container-fluid" id="produit">
-                <div class="row center-block text-center" style="width:80%">
-                <h3>Nos produits</h3>
-
-                    <!-- Produit 1 : Fromage -->
-                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+            <div class="modal fade produit1" tabindex="-1" role="dialog" aria-labelledby="produit1">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
                         <div class="thumbnail text-center">
+                            <h2><span class="label label-lg label-primary pull-right">Fromages</span>
+                            Notre sélection de fromages</h2>
                             <img src="produit1.jpg" alt="fromage" class="responsive">
                             <div class="caption">
-                                <h3>Nos fromages</h3>
-                                <button type="button" class="btn btn-warning" data-toggle="modal" data-target=".produit1">
-                                    <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
-                                    Découvrez notre sélection</button>
+                                <p>blabla !</p>
+                                <p class="alert alert-info">Blablabla</p>
+                                <span class="strong">15<span class="glyphicon glyphicon-euro" aria-hidden="true"></span></span>
+                                <a href="#" class="btn btn-success" role="button">
+                                <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
+                                Ajouter</a>
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
 
-                    <div class="modal fade produit1" tabindex="-1" role="dialog" aria-labelledby="produit1">
-                        <div class="modal-dialog modal-lg" role="document">
-                            <div class="modal-content">
-                                <div class="thumbnail text-center">
-                                    <h2>
-                                        <span class="label label-lg label-primary pull-right">Fromages</span>
-                                        Notre sélection de fromages
-                                    </h2>
-                                    <img src="produit1.jpg" alt="fromage" class="responsive">
-                                    <div class="caption">
-                                        <p>blabla !</p>
-                                        <p class="alert alert-info">Blablabla
-                                        </p>
-                                        <span class="strong">15<span class="glyphicon glyphicon-euro" aria-hidden="true"></span>
-                                        </span>
-                                        <a href="#" class="btn btn-success" role="button">
-                                            <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
-                                            Ajouter</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+<!-- Produit 2 : Lait -->
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                <div class="thumbnail text-center">
+                    <img src="produit2.jpg" alt="lait" class="responsive">
+                    <div class="caption">
+                        <h3>Notre lait</h3>
+                        <button type="button" class="btn btn-warning" data-toggle="modal" data-target=".produit2">
+                        <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+                        Découvrez notre sélection</button>
                     </div>
+                </div>
+            </div>
 
-                    <!-- Produit 2 : Lait -->
-                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+            <div class="modal fade produit2" tabindex="-1" role="dialog" aria-labelledby="produit2">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
                         <div class="thumbnail text-center">
+                            <h2><span class="label label-lg label-primary pull-right">Lait</span>
+                            Notre sélection de lait</h2>
                             <img src="produit2.jpg" alt="lait" class="responsive">
                             <div class="caption">
-                                <h3>Notre lait</h3>
-                                <button type="button" class="btn btn-warning" data-toggle="modal" data-target=".produit2">
-                                    <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
-                                    Découvrez notre sélection</button>
+                                <p>Blabla</p>
+                                <p class="alert alert-info">Blabla</p>
+                                <span class="strong">5<span class="glyphicon glyphicon-euro" aria-hidden="true"></span></span>
+                                <a href="#" class="btn btn-success" role="button">
+                                <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
+                                Ajouter</a>
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
 
-                    <div class="modal fade produit2" tabindex="-1" role="dialog" aria-labelledby="produit2">
-                        <div class="modal-dialog modal-lg" role="document">
-                            <div class="modal-content">
-                                <div class="thumbnail text-center">
-                                    <h2>
-                                        <span class="label label-lg label-primary pull-right">Lait</span>
-                                        Notre sélection de lait
-                                    </h2>
-                                    <img src="produit2.jpg" alt="lait" class="responsive">
-                                    <div class="caption">
-                                        <p>Blabla</p>
-                                        <p class="alert alert-info">Blabla
-                                        </p>
-                                        <span class="strong">5<span class="glyphicon glyphicon-euro" aria-hidden="true"></span>
-                                        </span>
-                                        <a href="#" class="btn btn-success" role="button">
-                                            <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
-                                            Ajouter</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+<!-- Produit 3 : Yaourt -->
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                <div class="thumbnail text-center">
+                    <img src="produit3.jpg" alt="produit3" class="responsive">
+                    <div class="caption">
+                        <h3>Nos yaourts</h3>
+                        <button type="button" class="btn btn-warning" data-toggle="modal" data-target=".produit3">
+                        <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+                        Découvrez notre sélection</button>
                     </div>
+                </div>
+            </div>
 
-                    <!-- Produit 3 : Yaourt -->
-
-                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+            <div class="modal fade produit3" tabindex="-1" role="dialog" aria-labelledby="produit3">
+                <div class="modal-dialog modal-lg" role="document">
+                   <div class="modal-content">
                         <div class="thumbnail text-center">
-                            <img src="produit3.jpg" alt="produit3" class="responsive">
+                            <h2><span class="label label-lg label-primary pull-right">Yaourt</span>
+                            Notre sélection de yaourts</h2>
+                            <img src="produit3.jpg" alt="yaourt" class="responsive">
                             <div class="caption">
-                                <h3>Nos yaourts</h3>
-                                <button type="button" class="btn btn-warning" data-toggle="modal" data-target=".produit3">
-                                    <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
-                                    Découvrez notre sélection</button>
+                                <p>Blablba !</p>
+                                <p class="alert alert-info">Blabla</p>
+                                <span class="strong">2<span class="glyphicon glyphicon-euro" aria-hidden="true"></span></span>
+                                <a href="#" class="btn btn-success" role="button">
+                                <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
+                                Ajouter</a>
                             </div>
                         </div>
-                    </div>
-
-                    <div class="modal fade produit3" tabindex="-1" role="dialog" aria-labelledby="produit3">
-                        <div class="modal-dialog modal-lg" role="document">
-                            <div class="modal-content">
-                                <div class="thumbnail text-center">
-                                    <h2>
-                                        <span class="label label-lg label-primary pull-right">Yaourt</span>
-                                        Notre sélection de yaourts
-                                    </h2>
-                                    <img src="produit3.jpg" alt="yaourt" class="responsive">
-                                    <div class="caption">
-                                        <p>Blablba !</p>
-                                        <p class="alert alert-info">Blabla</p>
-                                        <span class="strong">2<span class="glyphicon glyphicon-euro" aria-hidden="true"></span>
-                                        </span>
-                                        <a href="#" class="btn btn-success" role="button">
-                                            <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
-                                            Ajouter</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-</div>
+                   </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 <!-- "Sponsorisez une vache" -->
         <div class="container-fluid text-center" id="sponsor">
-          <h3>Sponsorisez une vache</h3>
+          <h2>Sponsorisez une vache</h2>
+          <p>Comme Madame Perette, montrez vous aussi votre amour pour les vaches en les sponsorisant : votre nom sera tatoué sur celle de votre choix !</p>
             <div id="carousel-sponsor" class="carousel slide center-block" data-ride="carousel" style="width:80%">
                 <!-- Indicators -->
                 <ol class="carousel-indicators">
@@ -206,7 +188,6 @@
                 <!-- Wrapper for slides -->
                 <div class="carousel-inner" role="listbox">
                     <div class="item active"> 
-                        <h4>Marguerite</h4>
                         <img src="vache1.jpg" alt="vache1">
                     </div>
                     <div class="item">
@@ -227,39 +208,46 @@
                 <!-- Controls -->
                 <a class="left carousel-control" href="#carousel-sponsor" role="button" data-slide="prev">
                     <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
+                    <span class="sr-only">Précédent</span>
                 </a>
                 <a class="right carousel-control" href="#carousel-sponsor" role="button" data-slide="next">
                     <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
+                    <span class="sr-only">Suivant</span>
                 </a>
             </div>
             </div>
           </div>
 <!-- End "Sponsorisez une vache" -->
-
-<br>
-  <footer>          
-    <div class="container-fluid">
-      <div class="row text-center">
-        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-            <h4>Nous contacter</h4>
-            <p></p>
-            <div style="display:block;" >
-              <i class="fa fa-facebook" style="display:inline-block"></i>
-              <p style="display:inline-block">Retrouvez-nous sur Facebook</p>
+    <footer>          
+        <div class="container-fluid">
+            <div class="row text-center">
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                    <h4>Nous contacter</h4>
+                    <p>Vous pouvez nous joindre au +33 9 72 52 63 93 !</p>
+                    <div style="display:block;" >
+                        <i class="fa fa-facebook-square" style="display:inline-block"></i>
+                        <p style="display:inline-block">Retrouvez-nous sur Facebook</p>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                    <h4>Nous trouver</h4>    
+                    <p>Notre magasin est situé au 18 rue de la gare, 28240 La Loupe. Il est ouvert du lundi au vendredi de 9h à 17h sur rendez-vous uniquement.</p>        
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                    
+                </div>
+            </div>
+            <div class="row text-center center-block" id="mentions">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <ul>
+                        <li><a href="#">Mentions légales</a></li>
+                        <li> - </li>
+                        <li><a href="#">Conditions générales</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
-        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-            <h4>Nous trouver</h4>    
-            <p></p>        
-        </div>
-        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-            
-        </div>
-      </div>
-    </div>
-  </footer>
+    </footer>
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>

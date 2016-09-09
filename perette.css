@@ -1,9 +1,31 @@
 @import 'https://fonts.googleapis.com/css?family=Alegreya+Sans|Alegreya+Sans+SC|Courgette';
 body {
 	color: white;
-
+	padding-top: 58px;
+}
+h2, h3, p {
+	font-family: 'Alegreya Sans', cursive, sans-serif;
 }
 
+p{
+	font-size:16px;
+	width: 80%;
+	display: inline-block;
+}
+#ferme p {
+	width: 90%;
+}
+#visual {
+	padding-right: 0px;
+	padding-left: 0px;
+}
+#mentions li {
+	display: inline-block;
+}
+#mentions a {
+	color: black;
+	font-style: bold;
+}
 #sponsor {
 	background-color: #5d4037;
 	padding-bottom: 10px;
@@ -25,6 +47,7 @@ footer {
 }
 .navbar {
 	background-color: #2e7d32;
+	border-width: 0px;
 }
 .navbar-brand {
     position: absolute;
@@ -41,8 +64,8 @@ footer {
 }
 .navbar-default .navbar-nav>li>a {
 	color: white;
-	font-size: 20px;
-	padding-right: 15px;
+	font-size: 18px;
+	padding-right: 0px;
 	padding-left: 0px;
     font-family:'Alegreya Sans', cursive, sans-serif;
 }
@@ -57,3 +80,58 @@ footer {
 	font-size: 20px;
 	margin-right: 15px;
 }
+.navbar-default .navbar-toggle .icon-bar {
+	background-color: white;
+}
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+	background-color: #f0ad4e;
+}
+.navbar-default .navbar-toggle {
+	border-color: transparent;
+	margin-left: 15px;
+}
+.nav>li {
+	padding-left: 15px;
+}
+.navbar-default .navbar-nav>li>a:hover {
+	color: #f0ad4e;
+}
+#container-nav {
+	box-shadow: 0px 1px 20px 2px #343434;
+}
+.fa-facebook-square{
+	color: white;
+	font-size: 32px;
+}
+
+@media (max-width: 992px) {
+	.container-fluid>.navbar-collapse, .container>.navbar-collapse {
+		display: none !important;
+		margin-right: 0px;
+		margin-left: 0px;
+	}
+
+	.container-fluid>.navbar-header, .container>.navbar-header{
+		display: block !important;
+		margin-right: 0px;
+		margin-left: 0px;
+		float: inherit;
+	}
+	.navbar-toggle {
+		display: block !important;
+	}
+	.navbar-header>.navbar-btn {
+		display: block !important;
+	}
+	.navbar-collapse>.navbar-nav>.navbar-btn {
+		display: none !important;
+	}
+}
+@media (min-width: 992px) {
+	.navbar-header>.navbar-btn {
+		display: none !important;
+	}
+	.navbar-collapse>.navbar-nav>.navbar-btn {
+		display: block !important;
+	}}
