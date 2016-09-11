@@ -21,17 +21,24 @@ p{
 }
 #mentions li {
 	display: inline-block;
+	color: black;
+}
+#mentions {
+	margin-top: 10px;
 }
 #mentions a {
 	color: black;
-	font-style: bold;
+	font-family: 'Alegreya Sans', cursive, sans-serif;
+	font-weight: 600;
 }
 #sponsor {
 	background-color: #5d4037;
-	padding-bottom: 10px;
+	padding-bottom: 30px;
 }
 #ferme {
 	background-color: #5d4037;
+	padding-bottom: 10px;
+	padding-top: 10px;
 }
 #vache-ferme {
 	width:100%;
@@ -41,9 +48,17 @@ p{
 }
 #produit{
 	background-color: #2e7d32;	
+	padding-bottom: 10px;
 }
 footer {
 	background-color: #2e7d32;
+	padding-top: 10px;
+	padding-bottom: 5px;
+}
+footer ul {
+	padding-left: 0px;
+	padding-bottom: 0px;
+	margin-bottom: 0px;	
 }
 .navbar {
 	background-color: #2e7d32;
@@ -147,6 +162,30 @@ footer {
 	content: "";
 	display: block;
 }
+.carousel-caption{
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 10;
+	padding-top: 0px;
+	padding-bottom: 30px;
+	color: #fff;
+	text-align: center;
+	background: rgba(0,0,0,0.6);
+}
 
-
-
+#carousel-sponsor {
+	width: 50%;
+}
+@media (max-width: 768px) {
+	#carousel-sponsor {
+		width: 80%;
+	}
+}
+.carousel-indicators {
+	bottom: 0px;
+}
+.carousel-caption h3{
+	margin-top: 10px;	
+}
