@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Perette et ses vaches</title>
+    <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans|Alegreya+Sans+SC|Courgette" rel="stylesheet">
+<<<<<<< HEAD
+
+    <link rel="stylesheet" href="Font Awesome/css/font-awesome.min.css">
+
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="perette.css">
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container-fluid" id="container-nav">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle pull-left" data-toggle="collapse" data-target="#navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <button type="button" class="btn btn-warning navbar-btn pull-right" data-toggle="modal" data-target="#basket">
+                    <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
+                Panier</button> 
+				<div class="navbar-brand">Perette et ses vaches</div>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-left">
+                    <li><a href="#ferme">Notre ferme</a></li>
+                    <li><a href="#produit">Nos produits</a></li>
+                    <li><a href="#sponsor">Nos vaches</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <button type="button" class="btn btn-warning navbar-btn" data-toggle="modal" data-target="#basket">
+                        <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
+                    Panier</button> 
+                </ul>
+            </div>
+        </div>
+	</nav>
+			<div class="modal fade" id="basket" tabindex="-1" role="dialog" aria-labelledby="basket">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+						<table class="table table-hover">
+							<thead>
+								<tr>
+									<th>Product</th>
+									<th>Quantity</th>
+									<th class="text-center">Price</th>
+									<th class="text-center">Total</th>
+									<th> </th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td class="col-sm-8 col-md-6">
+									<div class="media">
+										<a class="thumbnail pull-left" href="#"> <img class="media-object" src="http://icons.iconarchive.com/icons/custom-icon-design/flatastic-2/72/product-icon.png" style="width: 72px; height: 72px;"> </a>
+										<div class="media-body">
+											<h4 class="media-heading"><a href="#">Product name</a></h4>
+											<h5 class="media-heading"> by <a href="#">Brand name</a></h5>
+											<span>Status: </span><span class="text-success"><strong>In Stock</strong></span>
+										</div>
+									</div></td>
+									<td class="col-sm-1 col-md-1" style="text-align: center">
+									<input type="email" class="form-control" id="exampleInputEmail1" value="3">
+									</td>
+									<td class="col-sm-1 col-md-1 text-center"><strong>$4.87</strong></td>
+									<td class="col-sm-1 col-md-1 text-center"><strong>$14.61</strong></td>
+									<td class="col-sm-1 col-md-1">
+									<button type="button" class="btn btn-danger">
+										<span class="glyphicon glyphicon-remove"></span> Remove
+									</button></td>
+								</tr>
+								<tr>
+									<td class="col-md-6">
+									<div class="media">
+										<a class="thumbnail pull-left" href="#"> <img class="media-object" src="http://icons.iconarchive.com/icons/custom-icon-design/flatastic-2/72/product-icon.png" style="width: 72px; height: 72px;"> </a>
+										<div class="media-body">
+											<h4 class="media-heading"><a href="#">Product name</a></h4>
+											<h5 class="media-heading"> by <a href="#">Brand name</a></h5>
+											<span>Status: </span><span class="text-warning"><strong>Leaves warehouse in 2 - 3 weeks</strong></span>
+										</div>
+									</div></td>
+									<td class="col-md-1" style="text-align: center">
+									<input type="email" class="form-control" id="exampleInputEmail1" value="2">
+									</td>
+									<td class="col-md-1 text-center"><strong>$4.99</strong></td>
+									<td class="col-md-1 text-center"><strong>$9.98</strong></td>
+									<td class="col-md-1">
+									<button type="button" class="btn btn-danger">
+										<span class="glyphicon glyphicon-remove"></span> Remove
+									</button></td>
+								</tr>
+								<tr>
+									<td>   </td>
+									<td>   </td>
+									<td>   </td>
+									<td><h5>Subtotal</h5></td>
+									<td class="text-right"><h5><strong>$24.59</strong></h5></td>
+								</tr>
+								<tr>
+									<td>   </td>
+									<td>   </td>
+									<td>   </td>
+									<td><h5>Estimated shipping</h5></td>
+									<td class="text-right"><h5><strong>$6.94</strong></h5></td>
+								</tr>
+								<tr>
+									<td>   </td>
+									<td>   </td>
+									<td>   </td>
+									<td><h3>Total</h3></td>
+									<td class="text-right"><h3><strong>$31.53</strong></h3></td>
+								</tr>
+								<tr>
+									<td>   </td>
+									<td>   </td>
+									<td>   </td>
+									<td>
+									<button type="button" class="btn btn-default">
+										<span class="glyphicon glyphicon-shopping-cart"></span> Continue Shopping
+									</button></td>
+									<td>
+									<button type="button" class="btn btn-success">
+										Checkout <span class="glyphicon glyphicon-play"></span>
+									</button></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+<!-- End Navigation -->
+<!-- Visual -->
+
+
+
+
+    <div class="container-fluid" id="visual">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <img src="visual-vache3.jpg" alt="Vache" class="responsive" style="width:100%;">
+            </div>
+        </div>
+    </div>
+<!-- "Notre Ferme" -->
+    <div class="container-fluid" id="ferme">
+        <div class="row text-center">
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                <img src="ferme.jpg" alt="Ferme" class="responsive" id="vache-ferme">
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                <h2>Notre ferme</h2>    
+                <p>Madame Perette a repris la ferme de son arrière-grand-père récemment. Cinquante vaches gambadent à l’air pur sur les 30 hectares de terre qui entourent l’étable.<br><br>Si son ancêtre a conservé longtemps les méthodes de traites traditionnelles, elle a choisi de les moderniser radicalement la salle de traite pour le bien-être des ses animaux.<br><br>Et ses vaches elle les aime Mme Perette. Chacune a un nom, chacune a une histoire et elle leur réserve tous les jours une attention particulière.</p>   
+            </div>
+        </div>
+    </div>
+<!-- "Nos Produits" -->
+    <div class="container-fluid" id="produit">
+        <div class="row center-block text-center" style="width:80%">
+            <h2>Nos produits</h2>
+            <p>Lait, yaourts et fromages, retrouvez l’ensemble de la production de Perette et ses vaches.</p>
+<!-- Produit 1 : Fromage -->
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                <div class="thumbnail text-center">
+                    <img src="produit1.jpg" alt="fromage" class="responsive">
+                    <div class="caption">
+                        <h3>Nos fromages</h3>
+                        <button type="button" class="btn btn-warning" data-toggle="modal" data-target=".produit1">
+                            <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+                        Découvrez notre sélection</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade produit1" tabindex="-1" role="dialog" aria-labelledby="produit1">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="col-sm-6 col-md-4">
+                                    <div class="thumbnail" >
+                    <img src="fromage1.jpg" class="img-responsive">
+                    <div class="caption">
+                        <div class="row">
+                            <div class="col-md-6 col-xs-6">
+                                <h3>Reblochon</h3>
+                            </div>
+                            <div class="col-md-6 col-xs-6 price">
+                                <h3>
+                                <label>3,00€</label></h3>
+                            </div>
+                        </div>
+                        <p>Un délicieux fromage fondant 100% lait de vache</p>
+                        <div class="row">
+                              <div class="col-lg-2">
+                                        <div class="input-group">
+                                    <span class="input-group-btn">
+                                        <button type="button" class="quantity-left-minus btn btn-danger btn-number"  data-type="minus" data-field="">
+                                          <span class="glyphicon glyphicon-minus"></span>
+                                        </button>
+                                    </span>
+                                    <input type="text" id="quantity" name="quantity" class="form-control input-number" value="10" min="1" max="100">
+                                    <span class="input-group-btn">
+                                        <button type="button" class="quantity-right-plus btn btn-success btn-number" data-type="plus" data-field="">
+                                            <span class="glyphicon glyphicon-plus"></span>
+                                        </button>
+                                    </span>
+                                </div>
+                        </div>
+                            <div class="col-md-6">
+                                <a href="#" class="btn btn-success btn-product"><span class="glyphicon glyphicon-shopping-cart"></span> Ajouter</a></div>
+                        </div>
+
+                        <p> </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail" >
+                    <img src="fromage2.jpg" class="img-responsive">
+                    <div class="caption">
+                        <div class="row">
+                            <div class="col-md-6 col-xs-6">
+                                <h3>Camembert</h3>
+                            </div>
+                            <div class="col-md-6 col-xs-6 price">
+                                <h3>
+                                <label>2,50€</label></h3>
+                            </div>
+                        </div>
+                        <p>Régalez-vous avec le plus français des fromages!</p>
+                        <div class="row">
+                               <div class="col-lg-2">
+                                        <div class="input-group">
+                                    <span class="input-group-btn">
+                                        <button type="button" class="quantity-left-minus btn btn-danger btn-number"  data-type="minus" data-field="">
+                                          <span class="glyphicon glyphicon-minus"></span>
+                                        </button>
+                                    </span>
+                                    <input type="text" id="quantity" name="quantity" class="form-control input-number" value="10" min="1" max="100">
+                                    <span class="input-group-btn">
+                                        <button type="button" class="quantity-right-plus btn btn-success btn-number" data-type="plus" data-field="">
+                                            <span class="glyphicon glyphicon-plus"></span>
+                                        </button>
+                                    </span>
+                                </div>
+                        </div>
+                            <div class="col-md-6">
+                                <a href="#" class="btn btn-success btn-product"><span class="glyphicon glyphicon-shopping-cart"></span> Ajouter</a></div>
+                        </div>
+
+                        <p> </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail" >
+                    <img src="fromage3.jpg" class="img-responsive">
+                    <div class="caption">
+                        <div class="row">
+                            <div class="col-md-6 col-xs-6">
+                                <h3>Abondance</h3>
+                            </div>
+                            <div class="col-md-6 col-xs-6 price">
+                                <h3>
+                                <label>3,50€</label></h3>
+                            </div>
+                        </div>
+                        <p>Doux et fruité, ce fromage à pâte dure ne vous décevra pas!</p>
+                        <div class="container-fluid">
+                        <div class="row">
+                             <div class="col-sx-12">
+                                <div class="col-sx-4">
+                                    <div class="input-group">
+                                        <span class="input-group-btn">
+                                        <button type="button" class="quantity-left-minus btn btn-danger btn-number"  data-type="minus" data-field="">
+                                          <span class="glyphicon glyphicon-minus"></span>
+                                        </button>
+                                        </span>
+                                        <input type="text" id="quantity" name="quantity" class="form-control input-number" value="10" min="1" max="100">
+                                        <span class="input-group-btn">
+                                        <button type="button" class="quantity-right-plus btn btn-success btn-number" data-type="plus" data-field="">
+                                            <span class="glyphicon glyphicon-plus"></span>
+                                        </button>
+                                        </span>                        
+                                    </div>
+                                </div>
+                                <div style="clear:both;"></div>
+                                <div class="col-sx-4">
+                                    <a href="#" class="btn btn-success btn-product"><span class="glyphicon glyphicon-shopping-cart"></span> Ajouter</a>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+
+                        <p> </p>
+                </div>
+            </div>
+        </div>
+            
+        </div> 
+
+
+                    </div>
+                </div>
+            </div>
+
+<!-- Produit 2 : Lait -->
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                <div class="thumbnail text-center">
+                    <img src="produit2.jpg" alt="lait" class="responsive">
+                    <div class="caption">
+                        <h3>Notre lait</h3>
+                        <button type="button" class="btn btn-warning" data-toggle="modal" data-target=".produit2">
+                        <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+                        Découvrez notre sélection</button>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade produit2" tabindex="-1" role="dialog" aria-labelledby="produit2">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="col-sm-6 col-md-4">
+                                    <div class="thumbnail" >
+                    <img src="produit2.jpg" class="img-responsive">
+                    <div class="caption">
+                        <div class="row">
+                            <div class="col-md-6 col-xs-6">
+                                <h3>Lait entier<br/>bout. 1L</h3>
+                            </div>
+                            <div class="col-md-6 col-xs-6 price">
+                                <h3>
+                                <label>0,60€</label></h3>
+                            </div>
+                        </div>
+                        <p>Retrouvez le goût du lait de votre enfance!</p>
+                        <div class="row">
+                                <div class="col-lg-2">
+                                    <div class="input-group">
+                                        <span class="input-group-btn">
+                                            <button type="button" class="quantity-left-minus btn btn-danger btn-number"  data-type="minus" data-field="">
+                                              <span class="glyphicon glyphicon-minus"></span>
+                                            </button>
+                                            </span>
+                                            <input type="text" id="quantity" name="quantity" class="form-control input-number" value="10" min="1" max="100">
+                                            <span class="input-group-btn">
+                                            <button type="button" class="quantity-right-plus btn btn-success btn-number" data-type="plus" data-field="">
+                                                <span class="glyphicon glyphicon-plus"></span>
+                                            </button>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <a href="#" class="btn btn-success btn-product"><span class="glyphicon glyphicon-shopping-cart"></span> Ajouter</a></div>
+                                </div>
+
+                        <p> </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail" >
+                    <img src="produit2.jpg" class="img-responsive">
+                    <div class="caption">
+                        <div class="row">
+                            <div class="col-md-6 col-xs-6">
+                                <h3>Lait demi-écrémé 1L</h3>
+                            </div>
+                            <div class="col-md-6 col-xs-6 price">
+                                <h3>
+                                <label>0,40€</label></h3>
+                            </div>
+                        </div>
+                        <p>Le lait du petit-déjeuner et du goûter!</p>
+                        <div class="row">
+                               <div class="col-lg-2">
+                                        <div class="input-group">
+                                    <span class="input-group-btn">
+                                        <button type="button" class="quantity-left-minus btn btn-danger btn-number"  data-type="minus" data-field="">
+                                          <span class="glyphicon glyphicon-minus"></span>
+                                        </button>
+                                    </span>
+                                    <input type="text" id="quantity" name="quantity" class="form-control input-number" value="10" min="1" max="100">
+                                    <span class="input-group-btn">
+                                        <button type="button" class="quantity-right-plus btn btn-success btn-number" data-type="plus" data-field="">
+                                            <span class="glyphicon glyphicon-plus"></span>
+                                        </button>
+                                    </span>
+                                </div>
+                        </div>
+                            <div class="col-md-6">
+                                <a href="#" class="btn btn-success btn-product"><span class="glyphicon glyphicon-shopping-cart"></span> Ajouter</a></div>
+                        </div>
+
+                        <p> </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail" >
+                    <img src="produit2.jpg" class="img-responsive">
+                    <div class="caption">
+                        <div class="row">
+                            <div class="col-md-6 col-xs-6">
+                                <h3>Lait écrémé 1L</h3>
+                            </div>
+                            <div class="col-md-6 col-xs-6 price">
+                                <h3>
+                                <label>0,50€</label></h3>
+                            </div>
+                        </div>
+                        <p>Un lait sans crème mais pas sans saveur!</p>
+                        <div class="row">
+                               <div class="col-lg-2">
+                                        <div class="input-group">
+                                    <span class="input-group-btn">
+                                        <button type="button" class="quantity-left-minus btn btn-danger btn-number"  data-type="minus" data-field="">
+                                          <span class="glyphicon glyphicon-minus"></span>
+                                        </button>
+                                    </span>
+                                    <input type="text" id="quantity" name="quantity" class="form-control input-number" value="10" min="1" max="100">
+                                    <span class="input-group-btn">
+                                        <button type="button" class="quantity-right-plus btn btn-success btn-number" data-type="plus" data-field="">
+                                            <span class="glyphicon glyphicon-plus"></span>
+                                        </button>
+                                    </span>
+                                </div>
+                        </div>
+                            <div class="col-md-6">
+                                <a href="#" class="btn btn-success btn-product"><span class="glyphicon glyphicon-shopping-cart"></span> Ajouter</a></div>
+                        </div>
+
+                        <p> </p>
+                    </div>
+                </div>
+            </div>
+            
+        </div> 
+
+    </div>
+
+                    </div>
+                </div>
+            </div>
+
+<!-- Produit 3 : Yaourt -->
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                <div class="thumbnail text-center">
+                    <img src="produit3.jpg" alt="produit3" class="responsive">
+                    <div class="caption">
+                        <h3>Nos yaourts</h3>
+                        <button type="button" class="btn btn-warning" data-toggle="modal" data-target=".produit3">
+                        <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+                        Découvrez notre sélection</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade produit3" tabindex="-1" role="dialog" aria-labelledby="produit3">
+                <div class="modal-dialog modal-lg" role="document">
+                   <div class="modal-content">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="col-sm-6 col-md-4">
+                                    <div class="thumbnail" >
+                    <img src="yaourt1.png" class="img-responsive">
+                    <div class="caption">
+                        <div class="row">
+                            <div class="col-md-6 col-xs-6">
+                                <h3>Yaourts au lait entier</h3>
+                            </div>
+                            <div class="col-md-6 col-xs-6 price">
+                                <h3>
+                                <label>2,25€</label></h3>
+                            </div>
+                        </div>
+                        <p>Des yaourts riches en calcium.</p>
+                        <div class="italic">Lot de 2</div>
+                        <div class="row">
+                              <div class="col-lg-2">
+                                    <div class="input-group">
+                                    <span class="input-group-btn">
+                                        <button type="button" class="quantity-left-minus btn btn-danger btn-number"  data-type="minus" data-field="">
+                                          <span class="glyphicon glyphicon-minus"></span>
+                                        </button>
+                                    </span>
+                                    <input type="text" id="quantity" name="quantity" class="form-control input-number" value="10" min="1" max="100">
+                                    <span class="input-group-btn">
+                                        <button type="button" class="quantity-right-plus btn btn-success btn-number" data-type="plus" data-field="">
+                                            <span class="glyphicon glyphicon-plus"></span>
+                                        </button>
+                                    </span>
+                                </div>
+                        </div>
+                            <div class="col-md-6">
+                                <a href="#" class="btn btn-success btn-product"><span class="glyphicon glyphicon-shopping-cart"></span> Ajouter</a></div>
+                        </div>
+
+                        <p> </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail" >
+                    <img src="yaourt2.jpg" class="img-responsive">
+                    <div class="caption">
+                        <div class="row">
+                            <div class="col-md-6 col-xs-6">
+                                <h3>Yaourts sur lit de confiture</h3>
+                            </div>
+                            <div class="col-md-6 col-xs-6 price">
+                                <h3>
+                                <label>3,00€</label></h3>
+                            </div>
+                        </div>
+                        <p>Des yaourts à la confiture produite à la ferme!</p>
+                        <div class="italic">Lot de 2</div>
+                        <div class="row">
+                               <div class="col-lg-2">
+                                        <div class="input-group">
+                                    <span class="input-group-btn">
+                                        <button type="button" class="quantity-left-minus btn btn-danger btn-number"  data-type="minus" data-field="">
+                                          <span class="glyphicon glyphicon-minus"></span>
+                                        </button>
+                                    </span>
+                                    <input type="text" id="quantity" name="quantity" class="form-control input-number" value="10" min="1" max="100">
+                                    <span class="input-group-btn">
+                                        <button type="button" class="quantity-right-plus btn btn-success btn-number" data-type="plus" data-field="">
+                                            <span class="glyphicon glyphicon-plus"></span>
+                                        </button>
+                                    </span>
+                                </div>
+                        </div>
+                            <div class="col-md-6">
+                                <a href="#" class="btn btn-success btn-product"><span class="glyphicon glyphicon-shopping-cart"></span> Ajouter</a></div>
+                        </div>
+
+                        <p> </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail" >
+                    <img src="yaourt3.jpg" class="img-responsive">
+                    <div class="caption">
+                        <div class="row">
+                            <div class="col-md-6 col-xs-6">
+                                <h3>Yaourts à la vanille</h3>
+                            </div>
+                            <div class="col-md-6 col-xs-6 price">
+                                <h3>
+                                <label>3,00€</label></h3>
+                            </div>
+                        </div>
+                        <p>Des yaourts au délicieux goût de vanille de La Réunion!</p>
+                        <div class="italic">Lot de 2</div>
+                        <div class="row">
+                               <div class="col-lg-2">
+                                        <div class="input-group">
+                                    <span class="input-group-btn">
+                                        <button type="button" class="quantity-left-minus btn btn-danger btn-number"  data-type="minus" data-field="">
+                                          <span class="glyphicon glyphicon-minus"></span>
+                                        </button>
+                                    </span>
+                                    <input type="text" id="quantity" name="quantity" class="form-control input-number" value="10" min="1" max="100">
+                                    <span class="input-group-btn">
+                                        <button type="button" class="quantity-right-plus btn btn-success btn-number" data-type="plus" data-field="">
+                                            <span class="glyphicon glyphicon-plus"></span>
+                                        </button>
+                                    </span>
+                                </div>
+                        </div>
+                            <div class="col-md-6">
+                                <a href="#" class="btn btn-success btn-product"><span class="glyphicon glyphicon-shopping-cart"></span> Ajouter</a></div>
+                        </div>
+
+                        <p> </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail" >
+                    <img src="yaourt4.jpg" class="img-responsive">
+                    <div class="caption">
+                        <div class="row">
+                            <div class="col-md-6 col-xs-6">
+                                <h3>Yaourts aux fruits</h3>
+                            </div>
+                            <div class="col-md-6 col-xs-6 price">
+                                <h3>
+                                <label>3,00€</label></h3>
+                            </div>
+                        </div>
+                        <p>L'onctuosité du lait associé à la fraîcheur des fruits!</p>
+                        <div class="italic">Lot de 2</div>
+                        <div class="row">
+                               <div class="col-lg-2">
+                                        <div class="input-group">
+                                    <span class="input-group-btn">
+                                        <button type="button" class="quantity-left-minus btn btn-danger btn-number"  data-type="minus" data-field="">
+                                          <span class="glyphicon glyphicon-minus"></span>
+                                        </button>
+                                    </span>
+                                    <input type="text" id="quantity" name="quantity" class="form-control input-number" value="10" min="1" max="100">
+                                    <span class="input-group-btn">
+                                        <button type="button" class="quantity-right-plus btn btn-success btn-number" data-type="plus" data-field="">
+                                            <span class="glyphicon glyphicon-plus"></span>
+                                        </button>
+                                    </span>
+                                </div>
+                        </div>
+                            <div class="col-md-6">
+                                <a href="#" class="btn btn-success btn-product"><span class="glyphicon glyphicon-shopping-cart"></span> Ajouter</a></div>
+                        </div>
+
+                        <p> </p>
+                    </div>
+                </div>
+            </div>
+        </div> 
+
+    </div>
+
+                        <div class="container">
+
+                   </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- "Sponsorisez une vache" -->
+        <div class="container-fluid text-center" id="sponsor">
+          <h2>Sponsorisez une vache</h2>
+          <p>Comme Madame Perette, montrez vous aussi votre amour pour les vaches en les sponsorisant : votre nom sera tatoué sur celle de votre choix !</p>
+            <div id="carousel-sponsor" class="carousel slide center-block" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel-sponsor" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-sponsor" data-slide-to="1"></li>
+                    <li data-target="#carousel-sponsor" data-slide-to="2"></li>
+                    <li data-target="#carousel-sponsor" data-slide-to="3"></li>
+                    <li data-target="#carousel-sponsor" data-slide-to="4"></li>
+               </ol>
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active"> 
+                        <img src="vache1.jpg" alt="vache1">
+                		<div class="carousel-caption">
+                    		<h3>Lunette</h3>
+                    		<p>Details of Slide 1. Lorem Ipsum Blah Blah Blah....</p>
+                		</div>
+                    </div>
+                    <div class="item">
+                        <img src="vache2.jpg" alt="vache2">
+                		<div class="carousel-caption">
+                    		<h3>Moustache</h3>
+                    		<p>Details of Slide 1. Lorem Ipsum Blah Blah Blah....</p>
+                		</div>
+                	</div>
+                    <div class="item">
+                        <img src="vache3.jpg" alt="vache3">
+                		<div class="carousel-caption">
+                    		<h3>Truffe</h3>
+                    		<p>Details of Slide 1. Lorem Ipsum Blah Blah Blah....</p>
+                		</div>
+                	</div>
+                    <div class="item">
+                        <img src="vache4.jpg" alt="vache4">
+                		<div class="carousel-caption">
+                    		<h3>Marguerite</h3>
+                    		<p>Details of Slide 1. Lorem Ipsum Blah Blah Blah....</p>
+                		</div>
+                	</div>
+                    <div class="item">
+                        <img src="vache5.jpg" alt="vache5">
+                		<div class="carousel-caption">
+                    		<h3>Girouette</h3>
+                    		<p>Details of Slide 1. Lorem Ipsum Blah Blah Blah....</p>
+                		</div>
+                   	</div>
+                </div>
+
+                <!-- Controls -->
+                <a class="left carousel-control" href="#carousel-sponsor" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Précédent</span>
+                </a>
+                <a class="right carousel-control" href="#carousel-sponsor" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Suivant</span>
+                </a>
+            </div>
+            </div>
+          </div>
+<!-- End "Sponsorisez une vache" -->
+    <footer>          
+        <div class="container-fluid">
+            <div class="row text-center center-block">
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                    <h4>Nous contacter</h4>
+                    <p>Vous pouvez nous joindre au <br>+33 9 72 52 63 93 !</p>
+                   <button type="button" class="btn btn-warning" data-toggle="modal" data-target=".contactme">
+                            <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+                        Formulaire de contact</button>
+
+
+
+
+                    <div style="display:block;" >
+                        <i class="fa fa-facebook-square" style="display:inline-block; text-align:center;"><p style="display:inline-block">Retrouvez-nous sur Facebook</p></i>
+                    </div>
+                </div>
+                <div class="modal fade contactme" tabindex="-1" role="dialog" aria-labelledby="contactme">
+                    <div class="modal-dialog modal-lg" role="document">
+                        <div class="modal-content">
+
+
+    <div class="form-area">  
+        <form role="form">
+        <br style="clear:both">
+            <h2>Formulaire de contact</h2>
+            <p>blabla !</p>
+            <div class="form-group">
+                <input type="text" class="form-control" id="name" name="name" placeholder="Nom" required>
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" id="name" name="name" placeholder="Prénom" required>
+            </div>                    
+            <div class="form-group">
+                <input type="text" class="form-control" id="email" name="email" placeholder="Email" required>
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" id="mobile" name="mobile" placeholder="N° téléphone" required>
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" id="subject" name="subject" placeholder="Objet" required>
+            </div>
+            <div class="form-group">
+                <textarea class="form-control" type="textarea" id="message" placeholder="Message" maxlength="140" rows="7"></textarea>
+                <span class="help-block">
+                <p id="characterLeft" class="help-block "></p></span>
+            </div>       
+        </form>
+    </div>
+
+                            <p class="alert alert-info">Blablabla</p>
+                            <div class="modal-footer">
+<button type="button" id="submit" name="submit" class="btn btn-primary pull-right">Envoyer</button>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                    <h4>Nous trouver</h4>    
+                    <p>Notre magasin est situé au 18 rue de la gare, 28240 La Loupe. <br>Il est ouvert du lundi au vendredi de 9h à 17h sur rendez-vous uniquement.</p>        
+                </div>
+
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+				<div>
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2645.122233256298!2d1.0095428149852643!3d48.47336897925164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e3c1f7f154cb2f%3A0x56c92fac27b1deca!2s18+Rue+de+la+Gare%2C+28240+La+Loupe!5e0!3m2!1sfr!2sfr!4v1473861764261" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>  
+				  </div>
+                </div>
+            </div>
+
+
+
+            <div class="row text-center center-block" id="mentions">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <ul>
+						<li><a href="#">Conditions générales</a></li>
+						<li>-</li>
+                        <li><a href="#">Mentions légales</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+$(document).ready(function(){ 
+    $('#characterLeft').text('250');
+    $('#message').keydown(function () {
+        var max = 250;
+        var len = $(this).val().length;
+        if (len >= max) {
+            $('#characterLeft').text('Vous avez atteint la limite de caractères !');
+            $('#characterLeft').addClass('red');
+            $('#btnSubmit').addClass('disabled');            
+        } 
+        else {
+            var ch = max - len;
+            $('#characterLeft').text(ch);
+            $('#btnSubmit').removeClass('disabled');
+            $('#characterLeft').removeClass('red');            
+        }
+    });    
+});
+    </script>
+    <script type="text/javascript">
+$(document).ready(function(){
+    var quantitiy=0;
+     $('.quantity-right-plus').click(function(e){
+        
+        // Stop acting like a button
+        e.preventDefault();
+        // Get the field name
+        var quantity = parseInt($('#quantity').val());
+        
+        // If is not undefined
+            
+            $('#quantity').val(quantity + 1);
+
+          
+            // Increment
+        
+    });
+
+     $('.quantity-left-minus').click(function(e){
+        // Stop acting like a button
+        e.preventDefault();
+        // Get the field name
+        var quantity = parseInt($('#quantity').val());
+        
+        // If is not undefined
+      
+            // Increment
+            if(quantity>0){
+            $('#quantity').val(quantity - 1);
+            }
+    });
+    
+});
+    </script>
+	<script src="https://use.fontawesome.com/f0f4368368.js"></script>
+
+  </body>
+</html>
