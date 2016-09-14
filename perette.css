@@ -50,6 +50,12 @@ p{
 	background-color: #2e7d32;	
 	padding-bottom: 10px;
 }
+.btn-product{
+	width: 100%;
+}
+.input-group{
+	width: 40%;
+}
 footer {
 	background-color: #2e7d32;
 	padding-top: 10px;
@@ -200,3 +206,9 @@ footer ul {
 form h2 {
 	margin-top: 0px;
 } 
+.label-info{
+	background-color: #82c46c;
+}
+.italic {
+	font-style: italic;
+}
