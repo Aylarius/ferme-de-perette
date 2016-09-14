@@ -232,7 +232,7 @@ form h2 {
 }
 .italic {
 	font-style: italic;
-=======
+}
 .modal {
 	color: black;	
 }
@@ -269,5 +269,4 @@ footer p{
 #carousel-sponsor {
 	width: 70%;
 }
->>>>>>> master
 }
