@@ -189,3 +189,14 @@ footer ul {
 .carousel-caption h3{
 	margin-top: 10px;	
 }
+.form-area
+{
+    background-color: #FAFAFA;
+	padding: 10px 20px 20px;
+	margin: 5% 10%;
+	color: black;
+	border: 1px solid;
+}
+form h2 {
+	margin-top: 0px;
+} 
