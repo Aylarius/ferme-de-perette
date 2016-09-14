@@ -32,19 +32,18 @@ p{
 	font-weight: 600;
 }
 #sponsor {
-	background-color: #5d4037;
+	background-color: white;
 	padding-bottom: 30px;
+	color: black;
 }
 #ferme {
-	background-color: #5d4037;
+	background-color: white;
 	padding-bottom: 10px;
 	padding-top: 10px;
+	color: black;
 }
 #vache-ferme {
 	width:100%;
-	border-color: #5d4037;
-	border-width: 10px;
-	border-style: solid;
 }
 #produit{
 	background-color: #2e7d32;	
@@ -72,8 +71,8 @@ footer ul {
 }
 .navbar-brand {
     position: absolute;
-    width: 100%;
-    left: 0;
+    width: auto;
+    left: calc(50% - 146.117px);
     top: 0;
     text-align: center;
     margin: auto;
@@ -105,7 +104,7 @@ footer ul {
 	background-color: white;
 }
 
-.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover . {
 	background-color: #f0ad4e;
 }
 .navbar-default .navbar-toggle {
@@ -113,10 +112,13 @@ footer ul {
 	margin-left: 15px;
 }
 .nav>li {
-	padding-left: 15px;
+	padding-left: 25px;
 }
-.navbar-default .navbar-nav>li>a:hover {
-	color: #f0ad4e;
+.nav>li:hover {
+	background-color: #82C46C;
+}
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+	background-color: #82C46C;
 }
 #container-nav {
 	box-shadow: 0px 1px 20px 2px #343434;
@@ -128,11 +130,12 @@ footer ul {
 
 @media (max-width: 992px) {
 	.container-fluid>.navbar-collapse, .container>.navbar-collapse {
-		display: none !important;
 		margin-right: 0px;
 		margin-left: 0px;
 	}
-
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
 	.container-fluid>.navbar-header, .container>.navbar-header{
 		display: block !important;
 		margin-right: 0px;
@@ -148,6 +151,23 @@ footer ul {
 	.navbar-collapse>.navbar-nav>.navbar-btn {
 		display: none !important;
 	}
+	.collapse.in{
+        display:block !important;
+    }
+	 .navbar-header {
+        float: none;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-nav {
+        float: none!important;
+        margin: 7.5px -15px;
+    }
+    .navbar-nav>li {
+        float: none;
+    }
 }
 @media (min-width: 992px) {
 	.navbar-header>.navbar-btn {
@@ -195,6 +215,7 @@ footer ul {
 .carousel-caption h3{
 	margin-top: 10px;	
 }
+<<<<<<< HEAD
 .form-area
 {
     background-color: #FAFAFA;
@@ -211,4 +232,42 @@ form h2 {
 }
 .italic {
 	font-style: italic;
+=======
+.modal {
+	color: black;	
+}
+.btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn:active:focus, .btn:focus {
+	outline: inherit;
+	outline-offset:inherit;
+}
+
+@media (max-width: 600px) {
+	.navbar-default .navbar-brand {
+		font-size: 26px;
+	}
+}
+@media (max-width: 470px) {
+	.navbar-default .navbar-brand {
+		font-size: 20px;
+	}
+	.navbar-btn {
+	font-size: 18px;
+	padding: 3px 6px;
+}
+}
+@media (min-width: 1200px) {
+
+#ferme p {
+	width: 80%;
+}
+p{
+	font-size:20px;
+}
+footer p{
+	font-size:16px;
+}
+#carousel-sponsor {
+	width: 70%;
+}
+>>>>>>> master
 }
