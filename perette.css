@@ -118,6 +118,8 @@ footer ul {
 .fa-facebook-square{
 	color: white;
 	font-size: 32px;
+	display:inline-block; 
+	text-align:center;
 }
 
 @media (max-width: 992px) {
@@ -188,4 +190,8 @@ footer ul {
 }
 .carousel-caption h3{
 	margin-top: 10px;	
+}
+
+visual-vache {
+	width:100%;
 }
