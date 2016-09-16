@@ -193,6 +193,13 @@ visual-vache {
 .thumbnail-product {
 	max-width: 360px;	
 }
+.product-name {
+	margin-top: 0px;	
+}
+.input-basket {
+	margin-top: 6px !important;
+}
+
 
 /* --------- "Sponsorisez une vache" Section & Carousel ------------*/
 #sponsor {
@@ -295,6 +302,9 @@ footer ul {
 }
 .btn-number {
 	display: inline-block;	
+}
+.btn-group-xs>.btn, .btn-xs {
+	margin-top: 10px;
 }
 
 /* --------- Modals ------------*/
