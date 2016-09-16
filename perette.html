@@ -14,7 +14,7 @@
     <![endif]-->
 </head>
 <body>
-<!-- Navigation -->
+<!-- Navigation Bar -->
     <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
         <div class="container-fluid" id="container-nav">
             <div class="navbar-header">
@@ -27,7 +27,7 @@
                 <button type="button" class="btn btn-warning navbar-btn pull-right" data-toggle="modal" data-target="#basket">
                     <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
                 Panier</button> 
-				<div class="navbar-brand">Perette et ses vaches</div>
+				<div class="navbar-brand"><a href="#visual">Perette et ses vaches</a></div>
             </div>
             <div class="collapse navbar-collapse" id="navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-left">
@@ -43,30 +43,26 @@
             </div>
         </div>
 	</nav>
-<<<<<<< HEAD
-			<div class="modal fade" id="basket" tabindex="-1" role="dialog" aria-labelledby="basket">
-                <div class="modal-dialog modal-lg" role="document">
-                    <div class="modal-content">
+	<div class="modal fade" id="basket" tabindex="-1" role="dialog" aria-labelledby="basket">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
 				<div class="modal-header">
-					<div class="panel-title">
-						<div class="row">
-							<div class="col-xs-6">
-								<h5><span class="glyphicon glyphicon-shopping-cart"></span> Panier</h5>
-							</div>
-							<div class="col-xs-6">
-								<button type="button" class="btn btn-default">
-									<span class="glyphicon glyphicon-share-alt"></span> Continuer vos achats
-								</button>
-							</div>
+					<div class="row">
+						<div class="col-xs-6">
+							<h3><span class="glyphicon glyphicon-shopping-cart"></span> Panier</h3>
+						</div>
+						<div class="col-xs-6 text-right">
+							<button type="button" class="btn btn-default" id="btn-leave-basket" data-dismiss="modal">
+							<span class="glyphicon glyphicon-share-alt"></span> Continuer vos achats</button>
 						</div>
 					</div>
 				</div>
 				<div class="modal-body">
 					<div class="row">
-						<div class="col-xs-2"><img class="img-responsive" src="produit1.jpg">
-						</div>
+						<div class="col-xs-2"><img class="img-responsive" src="produit1.jpg"></div>
 						<div class="col-xs-4">
-							<h4 class="product-name"><strong>Produit</strong></h4><h4><small>Description du produit</small></h4>
+							<h4 class="product-name"><strong>Fromage</strong></h4>
+							<h4>Description du produit</h4>
 						</div>
 						<div class="col-xs-6">
 							<div class="col-xs-6 text-right">
@@ -76,35 +72,33 @@
 								<input type="text" class="form-control input-sm" value="1">
 							</div>
 							<div class="col-xs-2">
-								<button type="button" class="btn btn-link btn-xs">
-									<span class="glyphicon glyphicon-trash"> </span>
-								</button>
+								<button type="button" class="btn btn-link btn-xs" >
+								<span class="glyphicon glyphicon-trash"> </span></button>
 							</div>
 						</div>
 					</div>
 					<hr>
 					<div class="row">
-						<div class="col-xs-2"><img class="img-responsive" src="produit2.jpg">
-						</div>
+						<div class="col-xs-2"><img class="img-responsive" src="produit2.jpg"></div>
 						<div class="col-xs-4">
-							<h4 class="product-name"><strong>Produit</strong></h4><h4><small>Description du produit</small></h4>
+							<h4 class="product-name"><strong>Lait</strong></h4>
+							<h4>Description du produit</h4>
 						</div>
 						<div class="col-xs-6">
 							<div class="col-xs-6 text-right">
-								<h6><strong>4.00 € <span class="text-muted">x</span></strong></h6>
+								<h4><strong>4.00 € <span class="text-muted">x</span></strong></h4>
 							</div>
 							<div class="col-xs-4">
 								<input type="text" class="form-control input-sm" value="1">
 							</div>
 							<div class="col-xs-2">
 								<button type="button" class="btn btn-link btn-xs">
-									<span class="glyphicon glyphicon-trash"> </span>
-								</button>
+								<span class="glyphicon glyphicon-trash"> </span></button>
 							</div>
 						</div>
 					</div>
 					<br>
-					<div class="alert alert-warning">Blalbalblablabalabalablablablablablablababball</div>
+					<div class="alert alert-warning">Malheureusement, nous ne sommes pas encore en mesure de vous proposer de livraison à domicile. <br>Après validation de votre panier, nous vous inviterons à nous fournir vos coordonnées et à prendre RDV en ligne pour venir récupérer votre commande.			</div>
 				</div>
 				<div class="modal-footer">
 					<div class="row text-center">
@@ -112,35 +106,29 @@
 							<h4 class="text-right">Total <strong>9.00 €</strong></h4>
 						</div>
 						<div class="col-xs-3">
-							<button type="button" class="btn btn-default btn-block">
-								Valider
-							</button>
+							<button type="button" class="btn btn-success btn-block">
+								Valider	</button>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-</div>
 
-<!-- End Navigation -->
-<!-- Visual -->
-
-
-
-
+<!-- Visual Section -->
     <div class="container-fluid" id="visual">
         <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                <img src="visual-vache3.jpg" alt="Vache" class="responsive" id="visual-vache">
+                <img src="visual-vache3.jpg" alt="Vache" class="img-responsive" id="visual-vache">
             </div>
         </div>
     </div>
-<!-- "Notre Ferme" -->
+	
+<!-- "Notre Ferme" Section -->
     <div class="container-fluid" id="ferme">
         <div class="row text-center">
             <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-                <img src="ferme.jpg" alt="Ferme" class="responsive" id="vache-ferme">
+                <img src="ferme.jpg" alt="Ferme" class="img-responsive center-block" id="vache-ferme">
             </div>
             <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
                 <h2>Notre ferme</h2>    
@@ -148,12 +136,14 @@
             </div>
         </div>
     </div>
-<!-- "Nos Produits" -->
+	
+<!-- "Nos Produits" Section -->
     <div class="container-fluid" id="produit">
-        <div class="row center-block text-center" style="width:80%">
+        <div class="row center-block text-center">
             <h2>Nos produits</h2>
             <p>Lait, yaourts et fromages, retrouvez l’ensemble de la production de Perette et ses vaches.</p>
-<!-- Produit 1 : Fromage -->
+			
+		<!-- Product 1 : "Nos Fromages" -->
             <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
                 <div class="thumbnail text-center">
                     <img src="produit1.jpg" alt="fromage" class="responsive">
@@ -166,27 +156,110 @@
                 </div>
             </div>
 
+			<!-- Product 1 Modal -->
             <div class="modal fade produit1" tabindex="-1" role="dialog" aria-labelledby="produit1">
                 <div class="modal-dialog modal-lg" role="document">
                     <div class="modal-content">
-                        <div class="thumbnail text-center">
-                            <h2><span class="label label-lg label-primary pull-right">Fromages</span>
-                            Notre sélection de fromages</h2>
-                            <img src="produit1.jpg" alt="fromage" class="responsive">
-                            <div class="caption">
-                                <p>blabla !</p>
-                                <p class="alert alert-info">Blablabla</p>
-                                <span class="strong">15<span class="glyphicon glyphicon-euro" aria-hidden="true"></span></span>
-                                <a href="#" class="btn btn-success" role="button">
-                                <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
-                                Ajouter</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-<!-- Produit 2 : Lait -->
+                        <div class="row">
+							<div class="col-xs-12">
+								<div class="modal-header">
+									<h2>Notre sélection de fromages</h2>
+								</div>
+								<div class="col-xs-12 col-sm-6 col-md-4">
+									<div class="thumbnail " >
+										<img src="fromage1.jpg" class="img-responsive">
+										<div class="caption">
+											<div class="row">
+												<div class="col-xs-8">
+													<h3>Reblochon</h3>
+												</div>
+												<div class="col-xs-4 price">
+													<h3>
+													<label>3,00€</label></h3>
+												</div>
+											</div>
+											<p>Un délicieux fromage fondant 100% lait de vache</p>
+											<div class="row">
+												<div class="col-xs-12">
+													<button type="button" class="quantity-left-minus btn btn-danger btn-number"  data-type="minus" data-field="">
+													<span class="glyphicon glyphicon-minus"></span></button>
+													<input type="text" id="quantity" name="quantity" class="form-control input-number" value="1" min="1" max="100">
+													<button type="button" class="quantity-right-plus btn btn-success btn-number" data-type="plus" data-field="">
+													<span class="glyphicon glyphicon-plus"></span></button>
+													<a href="#" class="btn btn-success btn-product"><span class="glyphicon glyphicon-shopping-cart"></span> Ajouter</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-xs-12 col-sm-6 col-md-4">
+									<div class="thumbnail " >
+										<img src="fromage2.jpg" class="img-responsive">
+										<div class="caption">
+											<div class="row">
+												<div class="col-xs-8">
+													<h3>Camembert</h3>
+												</div>
+												<div class="col-xs-4 price">
+													<h3>
+													<label>2,50€</label></h3>
+												</div>
+											</div>
+											<p>Régalez-vous avec le plus français des fromages!</p>
+											<div class="row">
+												<div class="col-xs-12">
+													<button type="button" class="quantity-left-minus btn btn-danger btn-number"  data-type="minus" data-field="">
+													<span class="glyphicon glyphicon-minus"></span></button>
+													<input type="text" id="quantity" name="quantity" class="form-control input-number" value="1" min="1" max="100">
+													<button type="button" class="quantity-right-plus btn btn-success btn-number" data-type="plus" data-field="">
+													<span class="glyphicon glyphicon-plus"></span></button>
+													<a href="#" class="btn btn-success btn-product"><span class="glyphicon glyphicon-shopping-cart"></span> Ajouter</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-xs-12 col-sm-6 col-md-4">
+									<div class="thumbnail " >
+										<img src="fromage3.jpg" class="img-responsive">
+										<div class="caption">
+											<div class="row">
+												<div class="col-xs-8">
+													<h3>Abondance</h3>
+												</div>
+												<div class="col-xs-4 price">
+													<h3>
+													<label>3,50€</label></h3>
+												</div>
+											</div>
+											<p>Doux et fruité, ce fromage à pâte dure ne vous décevra pas!</p>
+											<div class="row">
+												<div class="col-xs-12">
+													<button type="button" class="quantity-left-minus btn btn-danger btn-number"  data-type="minus" data-field="">
+													<span class="glyphicon glyphicon-minus"></span></button>
+													<input type="text" id="quantity" name="quantity" class="form-control input-number" value="1" min="1" max="100">
+													<button type="button" class="quantity-right-plus btn btn-success btn-number" data-type="plus" data-field="">
+													<span class="glyphicon glyphicon-plus"></span></button>
+													<a href="#" class="btn btn-success btn-product"><span class="glyphicon glyphicon-shopping-cart"></span> Ajouter</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>									
+								<div class="modal-footer">
+									<div class="row text-center center-block">
+										<div class="col-xs-12">
+										<button type="button" class="btn btn-default" data-dismiss="modal"> Retour</button>
+										</div>
+									</div>
+								</div>
+        					</div> 
+                    	</div>
+                	</div>
+            	</div>
+			</div>
+			
+		<!-- Product 2 : "Notre Lait" -->
             <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
                 <div class="thumbnail text-center">
                     <img src="produit2.jpg" alt="lait" class="responsive">
@@ -198,28 +271,111 @@
                     </div>
                 </div>
             </div>
-
+			
+			<!-- Product 2 Modal -->
             <div class="modal fade produit2" tabindex="-1" role="dialog" aria-labelledby="produit2">
                 <div class="modal-dialog modal-lg" role="document">
                     <div class="modal-content">
-                        <div class="thumbnail text-center">
-                            <h2><span class="label label-lg label-primary pull-right">Lait</span>
-                            Notre sélection de lait</h2>
-                            <img src="produit2.jpg" alt="lait" class="responsive">
-                            <div class="caption">
-                                <p>Blabla</p>
-                                <p class="alert alert-info">Blabla</p>
-                                <span class="strong">5<span class="glyphicon glyphicon-euro" aria-hidden="true"></span></span>
-                                <a href="#" class="btn btn-success" role="button">
-                                <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
-                                Ajouter</a>
-                            </div>
-                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+								<div class="modal-header">
+									<h2>Notre sélection de laits</h2>
+								</div>
+								<div class="col-xs-12 col-sm-6 col-md-4">
+									<div class="thumbnail " >
+										<img src="produit2.jpg" class="img-responsive">
+										<div class="caption">
+											<div class="row">
+												<div class="col-xs-8">
+													<h3>Lait entier<br/> 1L</h3>
+												</div>
+												<div class="col-xs-4 price">
+													<h3>
+													<label>0,60€</label></h3>
+												</div>
+											</div>
+											<p>Retrouvez le goût du lait de votre enfance!</p>
+											<div class="row">
+												<div class="col-xs-12">
+													<button type="button" class="quantity-left-minus btn btn-danger btn-number"  data-type="minus" data-field="">
+													<span class="glyphicon glyphicon-minus"></span></button>
+													<input type="text" id="quantity" name="quantity" class="form-control input-number" value="1" min="1" max="100">
+													<button type="button" class="quantity-right-plus btn btn-success btn-number" data-type="plus" data-field="">
+													<span class="glyphicon glyphicon-plus"></span></button>
+													<a href="#" class="btn btn-success btn-product"><span class="glyphicon glyphicon-shopping-cart"></span> Ajouter</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-xs-12 col-sm-6 col-md-4">
+									<div class="thumbnail " >
+										<img src="produit2.jpg" class="img-responsive">
+										<div class="caption">
+											<div class="row">
+												<div class="col-xs-8">
+													<h3>Lait demi-écrémé 1L</h3>
+												</div>
+												<div class="col-xs-4 price">
+													<h3>
+													<label>0,40€</label></h3>
+												</div>
+											</div>
+											<p>Le lait du petit-déjeuner et du goûter!</p>
+											<div class="row">
+												<div class="col-xs-12">
+													<button type="button" class="quantity-left-minus btn btn-danger btn-number"  data-type="minus" data-field="">
+													<span class="glyphicon glyphicon-minus"></span></button>
+													<input type="text" id="quantity" name="quantity" class="form-control input-number" value="1" min="1" max="100">
+													<button type="button" class="quantity-right-plus btn btn-success btn-number" data-type="plus" data-field="">
+													<span class="glyphicon glyphicon-plus"></span></button>
+													<a href="#" class="btn btn-success btn-product"><span class="glyphicon glyphicon-shopping-cart"></span> Ajouter</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-xs-12 col-sm-6 col-md-4">
+									<div class="thumbnail " >
+										<img src="produit2.jpg" class="img-responsive">
+										<div class="caption">
+											<div class="row">
+												<div class="col-xs-8">
+													<h3>Lait écrémé <br>1L</h3>
+												</div>
+												<div class="col-xs-4 price">
+													<h3>
+													<label>0,50€</label></h3>
+												</div>
+											</div>
+											<p>Un lait sans crème mais pas sans saveur!</p>
+											<div class="row">
+												<div class="col-xs-12">
+													<button type="button" class="quantity-left-minus btn btn-danger btn-number"  data-type="minus" data-field="">
+													<span class="glyphicon glyphicon-minus"></span></button>
+													<input type="text" id="quantity" name="quantity" class="form-control input-number" value="1" min="1" max="100">
+													<button type="button" class="quantity-right-plus btn btn-success btn-number" data-type="plus" data-field="">
+													<span class="glyphicon glyphicon-plus"></span></button>
+													<a href="#" class="btn btn-success btn-product"><span class="glyphicon glyphicon-shopping-cart"></span> Ajouter</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="modal-footer">
+									<div class="row text-center center-block">
+										<div class="col-xs-12">
+										<button type="button" class="btn btn-default" data-dismiss="modal"> Retour</button>
+										</div>
+									</div>
+								</div>
+                    		</div> 
+                    	</div>
                     </div>
                 </div>
             </div>
 
-<!-- Produit 3 : Yaourt -->
+		<!-- Product 3 : "Nos Yaourts" -->
             <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
                 <div class="thumbnail text-center">
                     <img src="produit3.jpg" alt="produit3" class="responsive">
@@ -232,82 +388,228 @@
                 </div>
             </div>
 
+			<!-- Product 3 Modal -->
             <div class="modal fade produit3" tabindex="-1" role="dialog" aria-labelledby="produit3">
                 <div class="modal-dialog modal-lg" role="document">
                    <div class="modal-content">
-                        <div class="thumbnail text-center">
-                            <h2><span class="label label-lg label-primary pull-right">Yaourt</span>
-                            Notre sélection de yaourts</h2>
-                            <img src="produit3.jpg" alt="yaourt" class="responsive">
-                            <div class="caption">
-                                <p>Blablba !</p>
-                                <p class="alert alert-info">Blabla</p>
-                                <span class="strong">2<span class="glyphicon glyphicon-euro" aria-hidden="true"></span></span>
-                                <a href="#" class="btn btn-success" role="button">
-                                <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
-                                Ajouter</a>
-                            </div>
-                        </div>
-                   </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-<!-- "Sponsorisez une vache" -->
-        <div class="container-fluid text-center" id="sponsor">
-          <h2>Sponsorisez une vache</h2>
-          <p>Comme Madame Perette, montrez vous aussi votre amour pour les vaches en les sponsorisant : votre nom sera tatoué sur celle de votre choix !</p>
-            <div id="carousel-sponsor" class="carousel slide center-block" data-ride="carousel">
-                <!-- Indicators -->
-                <ol class="carousel-indicators">
-                    <li data-target="#carousel-sponsor" data-slide-to="0" class="active"></li>
-                    <li data-target="#carousel-sponsor" data-slide-to="1"></li>
-                    <li data-target="#carousel-sponsor" data-slide-to="2"></li>
-                    <li data-target="#carousel-sponsor" data-slide-to="3"></li>
-                    <li data-target="#carousel-sponsor" data-slide-to="4"></li>
-               </ol>
-
-                <!-- Wrapper for slides -->
-                <div class="carousel-inner" role="listbox">
-                    <div class="item active"> 
-                        <img src="vache1.jpg" alt="vache1">
-                		<div class="carousel-caption">
-                    		<h3>Lunette</h3>
-                    		<p>Details of Slide 1. Lorem Ipsum Blah Blah Blah....</p>
+                        <div class="row">
+                            <div class="col-xs-12">
+								<div class="modal-header">
+									<h2>Notre sélection de yaourts</h2>
+								</div>
+								<div class="col-xs-12 col-sm-6 col-md-4">
+									<div class="thumbnail " >
+										<img src="yaourt1.png" class="img-responsive">
+										<div class="caption">
+											<div class="row">
+												<div class="col-xs-8">
+													<h3>Yaourts au lait entier</h3>
+												</div>
+												<div class="col-xs-4 price">
+													<h3>
+													<label>2,25€</label></h3>
+												</div>
+											</div>
+											<p>Des yaourts riches en calcium.</p>
+											<div class="italic">Lot de 2</div>
+											<div class="row">
+												<div class="col-xs-12">
+													<button type="button" class="quantity-left-minus btn btn-danger btn-number"  data-type="minus" data-field="">
+													<span class="glyphicon glyphicon-minus"></span></button>
+													<input type="text" id="quantity" name="quantity" class="form-control input-number" value="1" min="1" max="100">
+													<button type="button" class="quantity-right-plus btn btn-success btn-number" data-type="plus" data-field="">
+													<span class="glyphicon glyphicon-plus"></span></button>
+													<a href="#" class="btn btn-success btn-product"><span class="glyphicon glyphicon-shopping-cart"></span> Ajouter</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-xs-12 col-sm-6 col-md-4">
+									<div class="thumbnail " >
+										<img src="yaourt2.jpg" class="img-responsive">
+										<div class="caption">
+											<div class="row">
+												<div class="col-xs-8">
+													<h3>Yaourts à la confiture</h3>
+												</div>
+												<div class="col-xs-4 price">
+													<h3>
+													<label>3,00€</label></h3>
+												</div>
+											</div>
+											<p>Des yaourts à la confiture produite à la ferme!</p>
+											<div class="italic">Lot de 2</div>
+											<div class="row">
+												<div class="col-xs-12">
+													<button type="button" class="quantity-left-minus btn btn-danger btn-number"  data-type="minus" data-field="">
+													<span class="glyphicon glyphicon-minus"></span></button>
+													<input type="text" id="quantity" name="quantity" class="form-control input-number" value="1" min="1" max="100">
+													<button type="button" class="quantity-right-plus btn btn-success btn-number" data-type="plus" data-field="">
+													<span class="glyphicon glyphicon-plus"></span></button>
+													<a href="#" class="btn btn-success btn-product"><span class="glyphicon glyphicon-shopping-cart"></span> Ajouter</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-xs-12 col-sm-6 col-md-4">
+									<div class="thumbnail " >
+										<img src="yaourt3.jpg" class="img-responsive">
+										<div class="caption">
+											<div class="row">
+												<div class="col-xs-8">
+													<h3>Yaourts à la vanille</h3>
+												</div>
+												<div class="col-xs-4 price">
+													<h3>
+													<label>3,00€</label></h3>
+												</div>
+											</div>
+											<p>Des yaourts au délicieux goût de vanille de La Réunion!</p>
+											<div class="italic">Lot de 2</div>
+											<div class="row">
+												<div class="col-xs-12">
+													<button type="button" class="quantity-left-minus btn btn-danger btn-number"  data-type="minus" data-field="">
+													<span class="glyphicon glyphicon-minus"></span></button>
+													<input type="text" id="quantity" name="quantity" class="form-control input-number" value="1" min="1" max="100">
+													<button type="button" class="quantity-right-plus btn btn-success btn-number" data-type="plus" data-field="">
+													<span class="glyphicon glyphicon-plus"></span></button>
+													<a href="#" class="btn btn-success btn-product"><span class="glyphicon glyphicon-shopping-cart"></span> Ajouter</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-xs-12 col-sm-6 col-md-4">
+									<div class="thumbnail " >
+										<img src="yaourt4.jpg" class="img-responsive">
+										<div class="caption">
+											<div class="row">
+												<div class="col-xs-8">
+													<h3>Yaourts aux fruits</h3>
+												</div>
+												<div class="col-xs-4 price">
+													<h3>
+													<label>3,00€</label></h3>
+												</div>
+											</div>
+											<p>L'onctuosité du lait associé à la fraîcheur des fruits!</p>
+											<div class="italic">Lot de 2</div>
+											<div class="row">
+												<div class="col-xs-12">
+													<button type="button" class="quantity-left-minus btn btn-danger btn-number"  data-type="minus" data-field="">
+													<span class="glyphicon glyphicon-minus"></span></button>
+													<input type="text" id="quantity" name="quantity" class="form-control input-number" value="1" min="1" max="100">
+													<button type="button" class="quantity-right-plus btn btn-success btn-number" data-type="plus" data-field="">
+													<span class="glyphicon glyphicon-plus"></span></button>
+													<a href="#" class="btn btn-success btn-product"><span class="glyphicon glyphicon-shopping-cart"></span> Ajouter</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div> 
+								<div class="modal-footer">
+									<div class="row text-center">
+										<div class="col-xs-12">
+										<button type="button" class="btn btn-default" data-dismiss="modal"> Retour</button>
+										</div>
+									</div>
+								</div>
+							</div>
                 		</div>
-                    </div>
-                    <div class="item">
-                        <img src="vache2.jpg" alt="vache2">
-                		<div class="carousel-caption">
-                    		<h3>Moustache</h3>
-                    		<p>Details of Slide 1. Lorem Ipsum Blah Blah Blah....</p>
-                		</div>
+            		</div>
+        		</div>
+			</div>
+		</div>
+	</div>
+
+<!-- "Sponsorisez une vache" Section -->
+	<div class="container-fluid text-center" id="sponsor">
+		<h2>Sponsorisez une vache</h2>
+		<p>Comme Madame Perette, montrez vous aussi votre amour pour les vaches en les sponsorisant : votre nom sera tatoué sur celle de votre choix !</p>
+		<div id="carousel-sponsor" class="carousel slide center-block" data-ride="carousel">
+                
+			<!-- Carousel Indicators -->
+			<ol class="carousel-indicators">
+				<li data-target="#carousel-sponsor" data-slide-to="0" class="active"></li>
+				<li data-target="#carousel-sponsor" data-slide-to="1"></li>
+				<li data-target="#carousel-sponsor" data-slide-to="2"></li>
+				<li data-target="#carousel-sponsor" data-slide-to="3"></li>
+				<li data-target="#carousel-sponsor" data-slide-to="4"></li>
+			</ol>
+
+			<!-- Carousel Wrapper -->
+			<div class="carousel-inner" role="listbox">
+				<div class="item active"> 
+					<img src="vache1.jpg" alt="vache1">
+					<div class="carousel-caption">
+						<h3>Lunette</h3>
+						<button class="btn btn-success btn-sponsor" type="submit" data-toggle="modal" data-target=".sponsor-1">Sponsorisez-moi!</button>
                 	</div>
-                    <div class="item">
-                        <img src="vache3.jpg" alt="vache3">
-                		<div class="carousel-caption">
-                    		<h3>Truffe</h3>
-                    		<p>Details of Slide 1. Lorem Ipsum Blah Blah Blah....</p>
+				</div>
+				<div class="item">
+					<img src="vache2.jpg" alt="vache2">
+					<div class="carousel-caption">
+						<h3>Moustache</h3>
+						<button class="btn btn-success btn-sponsor" type="submit" data-toggle="modal" data-target=".sponsor-1">Sponsorisez-moi!</button>
+					</div>
+				</div>
+				<div class="item">
+					<img src="vache3.jpg" alt="vache3">
+					<div class="carousel-caption">
+						<h3>Truffe</h3>
+						<button class="btn btn-success btn-sponsor" type="submit" data-toggle="modal" data-target=".sponsor-1">Sponsorisez-moi!</button>
                 		</div>
                 	</div>
                     <div class="item">
                         <img src="vache4.jpg" alt="vache4">
                 		<div class="carousel-caption">
                     		<h3>Marguerite</h3>
-                    		<p>Details of Slide 1. Lorem Ipsum Blah Blah Blah....</p>
+                    		<button class="btn btn-success btn-sponsor" type="submit" data-toggle="modal" data-target=".sponsor-1">Sponsorisez-moi!</button>
                 		</div>
                 	</div>
                     <div class="item">
                         <img src="vache5.jpg" alt="vache5">
                 		<div class="carousel-caption">
                     		<h3>Girouette</h3>
-                    		<p>Details of Slide 1. Lorem Ipsum Blah Blah Blah....</p>
+                    		<button class="btn btn-success btn-sponsor" type="submit" data-toggle="modal" data-target=".sponsor-1">Sponsorisez-moi!</button>
                 		</div>
                    	</div>
                 </div>
 
-                <!-- Controls -->
+                 <!--Sponsoring Form Modal -->
+                 <div class="modal fade sponsor-1" tabindex="-1" role="dialog" aria-labelledby="sponsor">
+                    <div class="modal-dialog modal-md" role="document">
+                        <div class="modal-content">
+                            <div class="form-area">  
+                                <form role="form">
+                                <h2>Merci de m'avoir choisie!</h2>
+                                <p>Remplissez les champs suivants et cliquez sur "Sponsoriser".</p>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Nom" required>
+                                        <input type="text" class="form-control" placeholder="Prénom" required>
+                                        <input type="text" class="form-control" placeholder="Email" required>
+                                        <input type="text" class="form-control" placeholder="Montant" required>
+                                    </div>
+                                </form>
+                            </div>
+                            <p class="alert alert-info">Transmettez votre chèque à l'ordre de "La Ferme de Perette" et vous recevrez par mail un coupon de réduction à utiliser pour votre prochain achat ainsi qu'une photo de la vache sponsorisée tatouée à votre nom.</p>
+                            <div class="modal-footer">
+								<div class="row text-center">
+									<div class="col-xs-6">
+                                <button type="button" class="btn btn-default pull-left" data-dismiss="modal"> Retour</button>
+									</div>
+									<div class="col-xs-6">
+								<button type="button" id="submit" name="submit" class="btn btn-primary pull-right">Sponsoriser</button>
+									</div>	
+								</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Carousel Controls -->
                 <a class="left carousel-control" href="#carousel-sponsor" role="button" data-slide="prev">
                     <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
                     <span class="sr-only">Précédent</span>
@@ -319,31 +621,64 @@
             </div>
             </div>
           </div>
-<!-- End "Sponsorisez une vache" -->
+
+<!-- Footer -->
     <footer>          
         <div class="container-fluid">
             <div class="row text-center center-block">
-                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-                    <h4>Nous contacter</h4>
-                    <p>Vous pouvez nous joindre au <br>+33 9 72 52 63 93 !</p>
-                    <div style="display:block;" >
-                        <i class="fa fa-facebook-square"><p style="display:inline-block">Retrouvez-nous sur Facebook</p></i>
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 contact-block">
+					<h4>Nous contacter</h4>
+					<p>Vous pouvez nous joindre au <br>+33 9 72 52 63 93 !</p>
+					<button type="button" class="btn btn-warning" data-toggle="modal" data-target=".contactme">                        Formulaire de contact</button>
+						<br>
+		
+		
+				<!-- Contact Form Modal -->
+                <div class="modal fade contactme" tabindex="-1" role="dialog" aria-labelledby="contactme">
+                    <div class="modal-dialog modal-md" role="document">
+                        <div class="modal-content">
+                            <div class="form-area">  
+                                <form role="form">
+                                <h2>Formulaire de contact</h2>
+                                <p>Remplissez les champs suivants et cliquez sur "Envoyer" pour nous transmettre votre message.</p>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Nom" required>
+                                        <input type="text" class="form-control" placeholder="Prénom" required>
+                                        <input type="text" class="form-control" placeholder="Email" required>
+                                        <input type="text" class="form-control" placeholder="N° téléphone" required>
+                                        <input type="text" class="form-control" placeholder="Objet" required>
+                                        <textarea class="form-control" type="textarea" id="message" placeholder="Message" maxlength="140" rows="7"></textarea>
+                                         <span class="help-block">Il vous reste 
+                                         <span id="characterLeft" class="help-block "></span> caractères.</span>
+									 </div>       
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+								<div class="row text-center">
+									<div class="col-xs-6">
+                                <button type="button" class="btn btn-default pull-left" data-dismiss="modal"> Retour</button>
+									</div>
+									<div class="col-xs-6">
+								<button type="button" id="submit" name="submit" class="btn btn-primary pull-right">Envoyer</button>
+									</div>	
+								</div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+				</div>
+				<div class="center-block text-center" >
+					<i class="fa fa-facebook-square"><p id="facebook"><a href="https://www.facebook.com/wildcodeschool">Retrouvez-nous sur Facebook</a></p></i>
+				</div>
+			</div>
+			<hr class="visible-xs">
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 contact-block">
                     <h4>Nous trouver</h4>    
-                    <p>Notre magasin est situé au 18 rue de la gare, 28240 La Loupe. <br>Il est ouvert du lundi au vendredi de 9h à 17h sur rendez-vous uniquement.</p>        
+                    <p>Notre magasin est situé au 18 rue de la gare, 28240 La Loupe. <br><br>Il est ouvert du lundi au vendredi de 9h à 17h sur rendez-vous uniquement.</p>        
                 </div>
-                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-<<<<<<< HEAD
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 contact-block">
           			<div>
-                  		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2645.122233256298!2d1.0095428149852643!3d48.47336897925164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e3c1f7f154cb2f%3A0x56c92fac27b1deca!2s18+Rue+de+la+Gare%2C+28240+La+Loupe!5e0!3m2!1sfr!2sfr!4v1473861764261" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>  
+                  		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2645.122233256298!2d1.0095428149852643!3d48.47336897925164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e3c1f7f154cb2f%3A0x56c92fac27b1deca!2s18+Rue+de+la+Gare%2C+28240+La+Loupe!5e0!3m2!1sfr!2sfr!4v1473861764261" allowfullscreen id="map"></iframe>  
 				  	</div>
-=======
-				<div>
-                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2645.122233256298!2d1.0095428149852643!3d48.47336897925164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e3c1f7f154cb2f%3A0x56c92fac27b1deca!2s18+Rue+de+la+Gare%2C+28240+La+Loupe!5e0!3m2!1sfr!2sfr!4v1473861764261" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>  
-				  </div>
->>>>>>> master
                 </div>
             </div>
             <div class="row text-center center-block" id="mentions">
@@ -361,6 +696,84 @@
 	<script src="https://use.fontawesome.com/f0f4368368.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript">
+	
+// Scroll Animation
+$('a[href="#ferme"]').click(function(){
+$('html, body').animate({
+		scrollTop:$('#ferme').offset().top - 58
+	}, 'slow');
+	return false;
+});
+$('a[href="#produit"]').click(function(){
+$('html, body').animate({
+		scrollTop:$('#produit').offset().top - 58
+	}, 'slow');
+	return false;
+});
+$('a[href="#sponsor"]').click(function(){
+$('html, body').animate({
+		scrollTop:$('#sponsor').offset().top - 58
+	}, 'slow');
+	return false;
+});
+$('a[href="#visual"]').click(function(){
+$('html, body').animate({
+		scrollTop:$('#visual').offset().top - 58
+	}, 'slow');
+	return false;
+});
+
+// Contact Form Word Count
+$(document).ready(function(){ 
+    $('#characterLeft').text('250');
+    $('#message').keydown(function () {
+        var max = 250;
+        var len = $(this).val().length;
+        if (len >= max) {
+            $('#characterLeft').text('Vous avez atteint la limite de caractères !');
+            $('#characterLeft').addClass('red');
+            $('#btnSubmit').addClass('disabled');            
+        } 
+        else {
+            var ch = max - len;
+            $('#characterLeft').text(ch);
+            $('#btnSubmit').removeClass('disabled');
+            $('#characterLeft').removeClass('red');            
+        }
+    });    
+});
+
+// Quantity Count
+$(document).ready(function(){
+    var quantitiy=0;
+     $('.quantity-right-plus').click(function(e){
+        // Stop acting like a button
+        e.preventDefault();
+        // Get the field name
+        var quantity = parseInt($('#quantity').val());
+        
+        // If is not undefined
+            $('#quantity').val(quantity + 1);
+            // Increment
+    });
+
+     $('.quantity-left-minus').click(function(e){
+        // Stop acting like a button
+        e.preventDefault();
+        // Get the field name
+        var quantity = parseInt($('#quantity').val());
+        
+        // If is not undefined
+            // Increment
+            if(quantity>0){
+            $('#quantity').val(quantity - 1);
+            }
+    });
+    
+});
+   </script>
 
   </body>
 </html>
